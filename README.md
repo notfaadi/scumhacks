@@ -16,4 +16,8 @@ Open http://localhost:4173/
 
 Home, features, pricing, journal, FAQ, support, checkout, and the policy pages. Checkout stores a request in the browser only. It does not charge a card or send a key.
 
-Search ranking is not something a template can guarantee. Titles, descriptions, canonical URLs, a sitemap, and original copy are in place so the domain has a clean starting point.
+SEO keyword map (primary, long-tail, LSI, meta copy): `data/seo-keywords.json`.
+
+Landing guides: `/aimbot/`, `/esp-hack/`, `/item-spawner/`, `/hwid-spoofer/`, `/download/`, `/blog/`.
+
+Search ranking is not guaranteed; use Google Search Console after the domain is live.
