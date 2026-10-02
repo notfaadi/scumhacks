@@ -10,6 +10,41 @@ if (menu && nav) {
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = String(new Date().getFullYear());
 
+/** Zadeyo affiliate checkout — referral code FDI */
+const ZADEYO_BUY_URL = "https://zadeyo.com/go/FDI?to=%2Fproducts%2Fscum";
+
+function wireZadeyoLink(el) {
+  el.setAttribute("href", ZADEYO_BUY_URL);
+  el.setAttribute("target", "_blank");
+  el.setAttribute("rel", "nofollow noopener noreferrer");
+}
+
+function isBuyNowLink(el) {
+  if (!(el instanceof HTMLAnchorElement)) return false;
+  if (el.classList.contains("buy-pill") || el.classList.contains("btn-buy")) return true;
+  if (el.hasAttribute("data-zadeyo-buy") || el.hasAttribute("data-checkout-plan")) return true;
+  const href = el.getAttribute("href") || "";
+  if (href === "/checkout.html" || href.startsWith("/checkout.html?")) return true;
+  return /\bbuy\s+now\b/i.test(el.textContent || "");
+}
+
+function applyZadeyoBuyLinks() {
+  const buySelector =
+    '.buy-pill, .btn-buy, [data-zadeyo-buy], [data-checkout-plan], a[href="/checkout.html"], a[href^="/checkout.html?"]';
+  document.querySelectorAll(buySelector).forEach(wireZadeyoLink);
+}
+
+applyZadeyoBuyLinks();
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a[href]");
+  if (!link || !isBuyNowLink(link)) return;
+  if (link.hostname === "zadeyo.com") return;
+  event.preventDefault();
+  wireZadeyoLink(link);
+  window.open(ZADEYO_BUY_URL, "_blank", "noopener,noreferrer");
+});
+
 const plans = {
   monthly: { name: "Monthly", length: "31 days of access", price: "$35" },
   lifetime: { name: "Lifetime", length: "Unlimited access", price: "$150" },
@@ -66,11 +101,9 @@ function renderSummary() {
 
 function updateBuyLinks() {
   const key = document.querySelector('.duration-picks input[type="radio"]:checked')?.value || "monthly";
-  document.querySelectorAll("[data-checkout-plan]").forEach((link) => {
-    link.setAttribute("href", `/checkout.html?plan=${key}`);
-  });
   const priceEl = document.querySelector("[data-live-price]");
   if (priceEl && plans[key]) priceEl.textContent = plans[key].price;
+  applyZadeyoBuyLinks();
 }
 
 planSelect?.addEventListener("change", () => {
