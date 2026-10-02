@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SCUM Hacks Pricing | Keys from $19 | scumhacks.org</title>
-  <meta name="description" content="SCUM Hacks pricing: Scout $19 for 24 hours, Raider $49 for 7 days, Warden $89 for 30 days. Same Windows overlay on every key.">
+  <title>SCUM Hacks Pricing | Monthly $35 · Lifetime $150</title>
+  <meta name="description" content="SCUM Hacks pricing: Monthly $35 for 31 days or Lifetime $150 for unlimited access. Full cheat menu on every key.">
   <link rel="canonical" href="https://scumhacks.org/pricing.html">
   <meta name="theme-color" content="#0b0c09">
   <meta property="og:title" content="SCUM Hacks Pricing">
-  <meta property="og:description" content="Scout $19, Raider $49, Warden $89. Same SCUM overlay on every key.">
+  <meta property="og:description" content="Monthly $35 or Lifetime $150. Same full SCUM overlay.">
   <meta property="og:url" content="https://scumhacks.org/pricing.html">
   <meta property="og:image" content="https://scumhacks.org/og.svg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -32,54 +32,78 @@
       </nav>
     </div>
   </header>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-fill>
+      <span>Monthly $35</span><span>Lifetime $150</span><span>Full menu</span><span>Windows 10/11</span><span>Email key</span>
+      <span>Monthly $35</span><span>Lifetime $150</span><span>Full menu</span><span>Windows 10/11</span><span>Email key</span>
+    </div>
+  </div>
+
   <main id="main">
     <div class="wrap page-hero">
       <p class="crumbs"><a href="/">Home</a> / Pricing</p>
       <p class="kicker">Keys</p>
-      <h1>Three lengths. One kit.</h1>
-      <p class="lede">Every plan includes player ESP, loot ESP, aimbot, radar, and presets. You are only choosing how long the key lasts.</p>
+      <h1>Two clocks. One menu.</h1>
+      <p class="lede">Monthly or Lifetime — same aimbot, ESP, vehicle list, misc toggles, and config tools. Pick the duration, then checkout.</p>
     </div>
+
     <section>
-      <div class="wrap prices">
-        <article class="price">
-          <div class="plan">Scout</div>
-          <div class="amount">$19 <small>USD</small></div>
-          <p>24 hours. For one raid or a first look.</p>
-          <ul>
-            <li>Full Windows overlay</li>
-            <li>Email delivery</li>
-            <li>Unused keys follow the refund page</li>
-          </ul>
-          <a class="btn" href="/checkout.html?plan=scout">Request Scout</a>
-        </article>
-        <article class="price featured">
-          <div class="plan">Raider</div>
-          <div class="amount">$49 <small>USD</small></div>
-          <p>7 days. For a week you already know you will play.</p>
-          <ul>
-            <li>Full Windows overlay</li>
-            <li>Email delivery</li>
-            <li>Lower cost per day than Scout</li>
-          </ul>
-          <a class="btn" href="/checkout.html?plan=raider">Request Raider</a>
-        </article>
-        <article class="price">
-          <div class="plan">Warden</div>
-          <div class="amount">$89 <small>USD</small></div>
-          <p>30 days. For when SCUM is the main game.</p>
-          <ul>
-            <li>Full Windows overlay</li>
-            <li>Email delivery</li>
-            <li>Lowest cost per day</li>
-          </ul>
-          <a class="btn" href="/checkout.html?plan=warden">Request Warden</a>
-        </article>
-      </div>
-      <div class="wrap prose" style="padding-top: 28px;">
-        <p>Not sure which length fits? Read <a href="/journal/choose-a-license.html">how to pick a license</a>. Questions about money back sit on the <a href="/refunds.html">refunds</a> page. This local preview records a request in the browser and does not charge a card.</p>
+      <div class="wrap product-stage">
+        <div>
+          <div class="prices two-up">
+            <article class="price featured">
+              <div class="plan">Monthly</div>
+              <div class="amount">$35 <small>USD</small></div>
+              <p>31 days of access. The default pick for most island weeks.</p>
+              <ul>
+                <li>Full feature menu</li>
+                <li>Windows 10 / 11</li>
+                <li>Email delivery</li>
+              </ul>
+            </article>
+            <article class="price">
+              <div class="plan">Lifetime</div>
+              <div class="amount">$150 <small>USD</small></div>
+              <p>Unlimited access when SCUM stays in rotation.</p>
+              <ul>
+                <li>Full feature menu</li>
+                <li>One payment</li>
+                <li>Email delivery</li>
+              </ul>
+            </article>
+          </div>
+          <div class="mini-spec">
+            <div><b>Aimbot</b> Player, zombie, FOV, bones</div>
+            <div><b>ESP</b> Players, NPCs, items</div>
+            <div><b>Vehicles</b> 11 types listed</div>
+            <div><b>Config</b> Save, load, create, delete</div>
+          </div>
+          <p class="prose" style="margin-top: 24px;"><a href="/features.html">See the full feature checklist</a> · Refunds on the <a href="/refunds.html">refunds page</a></p>
+        </div>
+
+        <aside class="buy-rail">
+          <div class="duration-picks card" role="radiogroup" aria-label="Choose your duration">
+            <h3>Choose your duration</h3>
+            <label class="duration is-active">
+              <input type="radio" name="plan" value="monthly" checked>
+              <span class="tick">✓</span>
+              <span><strong>Monthly</strong><small>31 days of access</small></span>
+              <span class="dur-price">$35</span>
+            </label>
+            <label class="duration">
+              <input type="radio" name="plan" value="lifetime">
+              <span class="tick">✓</span>
+              <span><strong>Lifetime</strong><small>Unlimited access</small></span>
+              <span class="dur-price">$150</span>
+            </label>
+            <a class="btn btn-buy" data-checkout-plan href="/checkout.html?plan=monthly">Buy now — <span data-live-price>$35</span></a>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
+
   <footer class="foot">
     <div class="wrap foot-grid">
       <div>
