@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | SCUM Hacks</title>
+  <meta name="description" content="Request a SCUM Hacks key. Scout, Raider, and Warden. This local preview does not take payment.">
+  <link rel="canonical" href="https://scumhacks.org/checkout.html">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b0c09">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="/"><span class="brand-name">SCUM <em>Hacks</em></span></a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="/features.html">Features</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/journal.html">Journal</a>
+        <a href="/faq.html">FAQ</a>
+        <a class="btn btn-small" href="/pricing.html">Get a key</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-hero">
+      <p class="crumbs"><a href="/pricing.html">Pricing</a> / Checkout</p>
+      <p class="kicker">Order</p>
+      <h1>Request a key.</h1>
+      <p class="lede">Pick the plan. Leave an email. A live card charge is not connected on this preview, so nothing is billed.</p>
+    </header>
+    <form class="form" data-request style="max-width: 560px; margin-bottom: 72px;">
+      <p data-summary>Choose a plan</p>
+      <label>Plan
+        <select id="plan" name="plan">
+          <option value="scout">Scout — 24 hours — $19</option>
+          <option value="raider">Raider — 7 days — $49</option>
+          <option value="warden">Warden — 30 days — $89</option>
+        </select>
+      </label>
+      <label>Email for the key <input name="email" type="email" required autocomplete="email"></label>
+      <button class="btn" type="submit">Save request</button>
+      <p class="note" role="status"></p>
+    </form>
+  </main>
+  <footer class="foot">
+    <div class="wrap legal">© <span data-year>2026</span> SCUM Hacks · <a href="/terms.html">Terms</a> · <a href="/refunds.html">Refunds</a></div>
+  </footer>
+  <script src="/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCUM Hacks Support</title>
+  <meta name="description" content="Contact the SCUM Hacks desk about a key, a charge, or a page on scumhacks.org.">
+  <link rel="canonical" href="https://scumhacks.org/support.html">
+  <meta name="theme-color" content="#0b0c09">
+  <meta property="og:title" content="SCUM Hacks Support">
+  <meta property="og:description" content="Write the desk about a key or a charge.">
+  <meta property="og:url" content="https://scumhacks.org/support.html">
+  <meta property="og:image" content="https://scumhacks.org/og.svg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="/"><span class="brand-name">SCUM <em>Hacks</em></span></a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="/features.html">Features</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/journal.html">Journal</a>
+        <a href="/faq.html">FAQ</a>
+        <a class="btn btn-small" href="/pricing.html">Get a key</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-hero">
+      <p class="crumbs"><a href="/">Home</a> / Support</p>
+      <p class="kicker">Desk</p>
+      <h1>Write the desk.</h1>
+      <p class="lede">Use this for a missing key, a refund question, or a broken page. Include the email you plan to pay with.</p>
+    </header>
+    <div class="split-2" style="padding-bottom: 72px;">
+      <form class="form" data-request>
+        <label>Name <input name="name" required autocomplete="name"></label>
+        <label>Email <input name="email" type="email" required autocomplete="email"></label>
+        <label>Topic
+          <select name="topic">
+            <option>Key request</option>
+            <option>Refund</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Note <textarea name="note" rows="5" placeholder="Plan, time, and what you expected."></textarea></label>
+        <button class="btn" type="submit">Send note</button>
+        <p class="note" role="status"></p>
+      </form>
+      <div class="help-grid">
+        <article class="help">
+          <h3>Keys</h3>
+          <p>Paid keys are meant to arrive by email. This preview does not send them. Start at <a href="/checkout.html">checkout</a> when a payment desk is connected.</p>
+        </article>
+        <article class="help">
+          <h3>Refunds</h3>
+          <p>The rule is on the <a href="/refunds.html">refunds page</a>. Mention whether a key was issued.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="foot">
+    <div class="wrap legal">© <span data-year>2026</span> SCUM Hacks · scumhacks.org</div>
+  </footer>
+  <script src="/js/site.js"></script>
+</body>
+</html>
